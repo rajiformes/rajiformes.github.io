@@ -7,6 +7,15 @@
 			<script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
 		</head>
 		<body>
+			
+			<h2>{{ site.data.navigation.docs_list_title }}</h2>
+<ul>
+   {% for item in site.data.navigation.docs %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endfor %}
+</ul>
+			
+			
 			<nav>
 	    		<ul>
 	        		<li><a href="/">Home</a></li>
