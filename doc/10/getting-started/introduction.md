@@ -5,6 +5,6 @@ title:  "Welcome to Jekyll!"
 
 # Welcome
 
-**Hello world**, this is my first Jekyll blog post.
+**Ver 1.0**, API documentation page
 
-I hope you like it!
+I hope i finish it !
