@@ -1,0 +1,12 @@
+items:
+- title: Project 
+  url: /about/
+
+- title: Team
+  url: /about/team.html
+
+- title: Sponsors
+  url: /about/sponsors.html
+
+- title: Legal
+  url: /about/legal.html
