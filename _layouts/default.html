@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
-		</head>
-		<body>
-			
-			<h2>{{ site.data.navigation.docs_list_title }}</h2>
-<ul>
-   {% for item in site.data.navigation.docs %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-   {% endfor %}
-</ul>
-			
-			
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-	    		</ul>
-			</nav>
+<html>
 
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:ukaratas@rocketmail.com">email</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<head>
+	<title>{{ page.title }}</title>
+	<!-- link to main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/pulse/bootstrap.min.css" rel="stylesheet" integrity="sha384-/uQFqO50IaQu2rNJYKPpV7zwsWJtd6V4DGX4wMw1ATz4KPuZEV96qQ2heVAw2kr2" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+	<h2>{{ site.data.navigation.docs_list_title }}</h2>
+	<ul>
+		{% for item in site.data.navigation.docs %}
+		<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+		{% endfor %}
+	</ul>
+
+
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+
+		{{ content }}
+
+	</div><!-- /.container -->
+	<footer>
+		<ul>
+			<li><a href="mailto:ukaratas@rocketmail.com">email</a></li>
+		</ul>
+	</footer>
+</body>
+
+</html>

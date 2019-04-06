@@ -1,2 +1,0 @@
-# rajiformes.github.io
-Images
