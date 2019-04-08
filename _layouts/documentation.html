@@ -15,8 +15,9 @@
 
                         <ul>
                             {% for subItem in item.items %}
-                             {{ forloop.index }}
+                            
                             <li t="subitem">
+                                {{ forloop.index }}
                                 <a href="{{ subItem.url }}">
                                     {{ subItem.title }}
                                 </a>
