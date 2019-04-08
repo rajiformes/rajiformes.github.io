@@ -4,28 +4,39 @@ items:
   items:
   - title: Components 
     url: /doc/10/getting-started/components.html
-  - title: Installation 
+
+  - title: Installation
     url: /doc/10/getting-started/setup.html
-  - title: First Process 
+    
+  - title: First Process
     url: /doc/10/getting-started/first/
     items:
     - title: Create Data Model 
       url: /doc/10/getting-started/first/data.html
+      
     - title: Define Process
       url: /doc/10/getting-started/first/process.html
+      
     - title: Define Views 
       url: /doc/10/getting-started/first/view.html
+      
     - title: Add Action 
       url: /doc/10/getting-started/first/action.html
+      
 - title: Concept
   url: /doc/10/concept/
+  
 - title: Data Models
   url: /doc/10/data/
+  
 - title: Actions
   url: /doc/10/action/
+  
 - title: Process Definition
   url: /doc/10/process/
+  
 - title: User Interface
   url: /doc/10/view/
+  
 - title: Administraion
   url: /doc/10/admin/  
