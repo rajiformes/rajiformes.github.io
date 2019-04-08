@@ -25,6 +25,18 @@ items:
       
 - title: Concept
   url: /doc/10/concept/
+  items:
+  - title: Defining Data 
+    url: /doc/10/concept/data
+    items:
+    - title: Persisting Data
+      url: /doc/10/concept/data
+    
+  - title: Defining Business Process
+    url: /doc/10/concept/process
+    
+  - title: Displaying Data
+    url: /doc/10/concept/display
   
 - title: Data Models
   url: /doc/10/data/
