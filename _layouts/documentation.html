@@ -12,19 +12,15 @@
                         <a href="{{ item.url }}">
                             {{ item.title }}
                         </a>
-                           <ul>
-                    
-                                {% for subItem in item.items %}
+                        <ul>
+                               {% for subItem in item.items %}
                                <li>
                                 <a href="{{ subItem.url }}">
                                     {{ subItem.title }}
                                </a>
-                                   
-                                   </li>
-                             
+                               </li>
                             {% endfor %}
-                               
-                                </ul>
+                        </ul>
                        
                       </li>
                     {% endfor %}
