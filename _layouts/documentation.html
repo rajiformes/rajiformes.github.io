@@ -20,7 +20,6 @@
                         <ul>
                             {% for subItem in item.items %}
                              {{ forloop.index }}
-                            -{{forloop.counter}}-
                             <li>
                                 <a href="{{ subItem.url }}">
                                     {% if page.url == subItem.url %}
@@ -33,7 +32,7 @@
                                 <ul>
                                     {% for subSubItem in subItem.items %}
                                      {{ forloop.index }}
-                                      -{{forloop.parentloop.counter}}-
+                                     {{ forloop.parentloop.index }}
                                     <li>
                                         <a href="{{ subSubItem.url }}">
                                             {% if page.url == subSubItem.url %}
