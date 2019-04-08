@@ -19,6 +19,7 @@
 						
 						<ul>
 							{% for subItem in item.items %}
+							-{{subItem}}-
 							<li>
 								<a class="nav-link" href="{{ subItem.url }}">
 									{% if page.url == subItem.url %}
@@ -30,6 +31,7 @@
 								
 								<ul>
 							{% for subSubItem in subItem.items %}
+									-{{subSubItem}}-
 							<li>
 								<a class="nav-link" href="{{ subSubItem.url }}">
 									{% if page.url == subSubItem.url %}
