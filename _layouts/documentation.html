@@ -8,7 +8,7 @@
             <div class="p-2 bd-highlight">
                 <ul>
                     {% for item in site.data.documentation-side-outline.items %}
-                    <li>
+                    <li t="item">
                         <a href="{{ item.url }}">
                             {{ item.title }}
                         </a>
@@ -16,7 +16,7 @@
                         <ul>
                             {% for subItem in item.items %}
                              {{ forloop.index }}
-                            <li>
+                            <li t="subitem">
                                 <a href="{{ subItem.url }}">
                                     {{ subItem.title }}
                                 </a>
