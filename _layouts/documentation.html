@@ -17,7 +17,7 @@
                             {% endif %}
                         </a>
 
-                        {% if forloop.first %}<ul>{% endif %}
+                        <ul>
                             {% for subItem in item.items %}
                              {{ forloop.index }}
                             -{{forloop.counter}}-
@@ -30,7 +30,7 @@
                                     {% endif %}
                                 </a>
 
-                                {% if forloop.first %}<ul>{% endif %}
+                                <ul>
                                     {% for subSubItem in subItem.items %}
                                      {{ forloop.index }}
                                       -{{forloop.parentloop.counter}}-
@@ -44,10 +44,10 @@
                                         </a>
                                     <li>
                                         {% endfor %}
-                                        {% if forloop.first %}</ul>{% endif %}
+                                        </ul>
                             <li>
                             {% endfor %}
-                                {% if forloop.first %} </ul>{% endif %}
+                                </ul>
                     </li>
                     {% endfor %}
                 </ul>
