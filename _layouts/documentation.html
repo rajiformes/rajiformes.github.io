@@ -13,7 +13,7 @@
                             {{ item.title }}
                         </a>
 
-                         {% if item.items.first %} item {% endif %}
+                         {% if item.items.first %} item  {% else %} no item {% endif %}
                         
                         <ul>
                             {% for subItem in item.items %}
