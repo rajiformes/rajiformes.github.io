@@ -28,25 +28,10 @@
                                     {{ subItem.title }}
                                     {% endif %}
                                 </a>
-
-                                <ul>
-                                    {% for subSubItem in subItem.items %}
-                                     {{ forloop.index }}
-                                     {{ forloop.parentloop.index }}
-                                    <li>
-                                        <a href="{{ subSubItem.url }}">
-                                            {% if page.url == subSubItem.url %}
-                                            <b>{{ subSubItem.title }}</b>
-                                            {% else %}
-                                            {{ subSubItem.title }}
-                                            {% endif %}
-                                        </a>
-                                    <li>
-                                        {% endfor %}
-                                        </ul>
+                              
                             <li>
                             {% endfor %}
-                                </ul>
+                       </ul>
                     </li>
                     {% endfor %}
                 </ul>
