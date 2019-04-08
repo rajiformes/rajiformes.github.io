@@ -5,7 +5,7 @@ title:  "Data in Rajiformes"
 
 # Data Persistance
 
-Rajiformes deals with data as **JSON** format. Data can contain simple types, complex types and data references.
+Rajiformes deals data as **JSON** format. Data can contain simple types, complex types and data references.
 
 ```JSON
 {
