@@ -20,11 +20,11 @@
 						<ul>
 							{% for subItem in item.items %}
 							<li>
-								<a class="nav-link" href="{{ item.url }}">
-									{% if page.url == item.url %}
-									<b>{{ item.title }}</b>
+								<a class="nav-link" href="{{ subItem.url }}">
+									{% if page.url == subItem.url %}
+									<b>{{ subItem.title }}</b>
 									{% else %}
-									{{ item.title }}
+									{{ subItem.title }}
 									{% endif %}
 								</a>
 							<li>
