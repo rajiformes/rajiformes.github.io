@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title:  "Welcome to Jekyll!"
+title:  "Getting Started with Rajiformes"
 ---
 
 # Welcome
