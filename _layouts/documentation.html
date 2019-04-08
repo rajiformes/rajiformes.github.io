@@ -12,21 +12,15 @@
                         <a href="{{ item.url }}">
                             {{ item.title }}
                         </a>
-                        
-                        </li>
-                          {% if item.items.first %} <ul> {% endif %}
-                            {% for subItem in item.items %}
-                            
-                            <li t="subitem">
+                                {% for subItem in item.items %}
                                 {{ forloop.index }}
                                 <a href="{{ subItem.url }}">
                                     {{ subItem.title }}
-                                </a>
-                              
-                            <li>
+                               </a>
+                             
                             {% endfor %}
-                       {% if item.items.first %} </ul> {% endif %} 
-                    
+                       
+                      </li>
                     {% endfor %}
                 </ul>
             </div>
