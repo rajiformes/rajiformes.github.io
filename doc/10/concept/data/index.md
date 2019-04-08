@@ -7,7 +7,7 @@ title:  "Data in Rajiformes"
 
 Rajiformes deals with data as **JSON** format. Data can contain simple types, complex types and data references.
 
-```json
+```JSON
 {
   "name": {
     "first": "Ugur",
