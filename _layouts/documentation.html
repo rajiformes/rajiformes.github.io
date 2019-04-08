@@ -10,11 +10,7 @@
                     {% for item in site.data.documentation-side-outline.items %}
                     <li>
                         <a href="{{ item.url }}">
-                            {% if page.url == item.url %}
-                            <b>{{ item.title }}</b>
-                            {% else %}
                             {{ item.title }}
-                            {% endif %}
                         </a>
 
                         <ul>
@@ -22,11 +18,7 @@
                              {{ forloop.index }}
                             <li>
                                 <a href="{{ subItem.url }}">
-                                    {% if page.url == subItem.url %}
-                                    <b>{{ subItem.title }}</b>
-                                    {% else %}
                                     {{ subItem.title }}
-                                    {% endif %}
                                 </a>
                               
                             <li>
