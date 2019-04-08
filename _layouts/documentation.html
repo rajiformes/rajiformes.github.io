@@ -17,7 +17,7 @@
                             {% endif %}
                         </a>
 
-                        <ul>
+                        {% if forloop.first %}<ul>{% endif %}
                             {% for subItem in item.items %}
                             -{{subItem.title}}-
                             <li>
@@ -29,9 +29,9 @@
                                     {% endif %}
                                 </a>
 
-                                <ul>
+                                {% if forloop.first %}<ul>{% endif %}
                                     {% for subSubItem in subItem.items %}
-                                    st-{{subSubItem.title}}- st
+                                    -{{subSubItem.title}}-
                                     <li>
                                         <a href="{{ subSubItem.url }}">
                                             {% if page.url == subSubItem.url %}
@@ -41,11 +41,13 @@
                                             {% endif %}
                                         </a>
                                     <li>
-                                    {% endfor %}
-                                </ul>
+                                        { % endfor % }
+                                        {% if forloop.first %}
+                                </ul>{% endif %}
                             <li>
-                            {% endfor %}
-                        </ul>
+                                {% endfor %}
+                                {% if forloop.first %}
+                        </ul>{% endif %}
                     </li>
                     {% endfor %}
                 </ul>
@@ -53,7 +55,7 @@
             <div class="p-2 flex-grow-1 bd-highlight"> {{ content }} </div>
         </div>
     </div>
-    {% include footer.html %} 
+    {% include footer.html %}
 </body>
 
 </html>
