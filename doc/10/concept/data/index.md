@@ -3,8 +3,17 @@ layout: documentation
 title:  "Data in Rajiformes"
 ---
 
-# Welcome
+# Data Persistance
 
-**Ver 1.0**, API documentation page
+Rajiformes deals with data as **JSON** format. Data can contain simple types, complex types and data references.
 
-I hope i finish it !
+``` JSON
+{
+  "name": {
+    "first": "Ugur",
+    "last": "karatas"
+  },
+  "gender": "Male",
+  "age": "41",
+  "title": "Enterprise Architect"
+}
