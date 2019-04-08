@@ -19,7 +19,8 @@
 
                         {% if forloop.first %}<ul>{% endif %}
                             {% for subItem in item.items %}
-                            -{{subItem.title}}-
+                             {{ forloop.index }}
+                            -{{forloop.counter}}-
                             <li>
                                 <a href="{{ subItem.url }}">
                                     {% if page.url == subItem.url %}
@@ -31,7 +32,8 @@
 
                                 {% if forloop.first %}<ul>{% endif %}
                                     {% for subSubItem in subItem.items %}
-                                    -{{subSubItem.title}}-
+                                     {{ forloop.index }}
+                                      -{{forloop.parentloop.counter}}-
                                     <li>
                                         <a href="{{ subSubItem.url }}">
                                             {% if page.url == subSubItem.url %}
@@ -41,13 +43,11 @@
                                             {% endif %}
                                         </a>
                                     <li>
-                                        { % endfor % }
-                                        {% if forloop.first %}
-                                </ul>{% endif %}
+                                        {% endfor %}
+                                        {% if forloop.first %}</ul>{% endif %}
                             <li>
-                                {% endfor %}
-                                {% if forloop.first %}
-                        </ul>{% endif %}
+                            {% endfor %}
+                                {% if forloop.first %} </ul>{% endif %}
                     </li>
                     {% endfor %}
                 </ul>
