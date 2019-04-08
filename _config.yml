@@ -1,4 +1,6 @@
 name: Rajiformes
+title: Rajiformes
+theme: jekyll-theme-architect
 markdown: kramdown
 highlighter: rouge
 kramdown:

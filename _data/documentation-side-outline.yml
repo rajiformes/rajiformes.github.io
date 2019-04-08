@@ -24,14 +24,17 @@ items:
       url: /doc/10/getting-started/first/action.html
       
 - title: Concept
-  url: /doc/10/concept/
+  url: /doc/10/concept/data/adaptor.html
   items:
   - title: Defining Data 
-    url: /doc/10/concept/data
+    url: /doc/10/concept/data/adaptor.html
     items:
+    - title: Data Adaptors
+      url: /doc/10/concept/data/adaptor.html
+      
     - title: Data Persistance
-      url: /doc/10/concept/data
-    
+      url: /doc/10/concept/data/persistance.html
+ 
   - title: Defining Business Process
     url: /doc/10/concept/process
     
