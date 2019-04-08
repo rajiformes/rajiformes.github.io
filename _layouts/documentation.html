@@ -1,64 +1,59 @@
 {% include header.html %}
 
 <body>
-	{% include nav-bar.html %}
-	
-	<div class="container-fluid">
-		<div class="d-flex bd-highlight">
-			<div class="p-2 bd-highlight">
-				<ul class="nav flex-column">
-					{% for item in site.data.documentation-side-outline.items %}
-					<li {% if page.url == item.url %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-						<a class="nav-link" href="{{ item.url }}">
-							{% if page.url == item.url %}
-							<b>{{ item.title }}</b>
-							{% else %}
-							{{ item.title }}
-							{% endif %}
-						</a>
-						
-						<ul>
-							{% for subItem in item.items %}
-							-{{subItem}}-
-							<li>
-								<a class="nav-link" href="{{ subItem.url }}">
-									{% if page.url == subItem.url %}
-									<b>{{ subItem.title }}</b>
-									{% else %}
-									{{ subItem.title }}
-									{% endif %}
-								</a>
-								
-								<ul>
-							{% for subSubItem in subItem.items %}
-									-{{subSubItem}}-
-							<li>
-								<a class="nav-link" href="{{ subSubItem.url }}">
-									{% if page.url == subSubItem.url %}
-									<b>{{ subSubItem.title }}</b>
-									{% else %}
-									{{ subSubItem.title }}
-									{% endif %}
-								</a>
-							<li>
-							{% endfor %}
-						</ul>
-								
-								
-							<li>
-							{% endfor %}
-						</ul>
-						
-					</li>
-					{% endfor %}
-				</ul>
-			
+    {% include nav-bar.html %}
 
-			</div>
-			<div class="p-2 flex-grow-1 bd-highlight"> {{ content }} </div>
-		</div>
-	</div>
-	{% include footer.html %}
+    <div class="container-fluid">
+        <div class="d-flex bd-highlight">
+            <div class="p-2 bd-highlight">
+                <ul>
+                    {% for item in site.data.documentation-side-outline.items %}
+                    <li>
+                        <a href="{{ item.url }}">
+                            {% if page.url == item.url %}
+                            <b>{{ item.title }}</b>
+                            {% else %}
+                            {{ item.title }}
+                            {% endif %}
+                        </a>
+
+                        <ul>
+                            {% for subItem in item.items %}
+                            -{{subItem.title}}-
+                            <li>
+                                <a href="{{ subItem.url }}">
+                                    {% if page.url == subItem.url %}
+                                    <b>{{ subItem.title }}</b>
+                                    {% else %}
+                                    {{ subItem.title }}
+                                    {% endif %}
+                                </a>
+
+                                <ul>
+                                    {% for subSubItem in subItem.items %}
+                                    -{{subSubItem.title}}-
+                                    <li>
+                                        <a href="{{ subSubItem.url }}">
+                                            {% if page.url == subSubItem.url %}
+                                            <b>{{ subSubItem.title }}</b>
+                                            {% else %}
+                                            {{ subSubItem.title }}
+                                            {% endif %}
+                                        </a>
+                                    <li>
+                                    % endfor %}
+                                </ul>
+                            <li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="p-2 flex-grow-1 bd-highlight"> {{ content }} </div>
+        </div>
+    </div>
+    {% include footer.html %}
 </body>
 
 </html>
