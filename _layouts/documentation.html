@@ -16,6 +16,21 @@
 							{{ item.title }}
 							{% endif %}
 						</a>
+						
+						<ul>
+							{% for subItem in item.items %}
+							<li>
+								<a class="nav-link" href="{{ item.url }}">
+									{% if page.url == item.url %}
+									<b>{{ item.title }}</b>
+									{% else %}
+									{{ item.title }}
+									{% endif %}
+								</a>
+							<li>
+							{% endfor %}
+						</ul>
+						
 					</li>
 					{% endfor %}
 				</ul>
