@@ -8,20 +8,23 @@ items:
   - title: Installation
     url: /doc/10/getting-started/setup.html
     
-  - title: First Process
-    url: /doc/10/getting-started/first/
+  - title: Sample Scenario
+    url: /doc/10/getting-started/concept/scenario.html
     items:
-    - title: Create Data Model 
-      url: /doc/10/getting-started/first/data.html
+    - title: 1. Scenario 
+      url: /doc/10/getting-started/concept/scenario.html
       
-    - title: Define Process
-      url: /doc/10/getting-started/first/process.html
+    - title: 2. Start A Process
+      url: /doc/10/getting-started/concept/start-process.html
       
-    - title: Define Views 
-      url: /doc/10/getting-started/first/view.html
+    - title: 3. Build Absence Form
+      url: /doc/10/getting-started/concept/build-absence-form.html
       
-    - title: Add Action 
-      url: /doc/10/getting-started/first/action.html
+    - title: 4  Submit Form Data 
+      url: /doc/10/getting-started/concept/submit-form-data.html
+      
+    - title: 5  Display Form Data
+      url: /doc/10/getting-started/concept/display-form-data.html
       
 - title: Concept
   url: /doc/10/concept/data/adaptor.html
