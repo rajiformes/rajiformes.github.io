@@ -25,27 +25,15 @@ items:
       
     - title: 5  Display Form Data
       url: /doc/10/getting-started/concept/display-form-data.html
-      
-- title: Concept
-  url: /doc/10/concept/data/adaptor.html
-  items:
-  - title: Defining Data 
-    url: /doc/10/concept/data/adaptor.html
-    items:
-    - title: Data Adaptors
-      url: /doc/10/concept/data/adaptor.html
-      
-    - title: Data Persistance
-      url: /doc/10/concept/data/persistance.html
- 
-  - title: Defining Business Process
-    url: /doc/10/concept/process
-    
-  - title: Displaying Data
-    url: /doc/10/concept/display
-  
+
 - title: Data Models
   url: /doc/10/data/
+  items:
+    - title: Data Adaptors
+      url: /doc/10/data/adaptor.html
+      
+    - title: Data Persistance
+      url: /doc/10/data/persistance.html
   
 - title: Actions
   url: /doc/10/action/
