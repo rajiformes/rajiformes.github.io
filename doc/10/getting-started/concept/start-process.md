@@ -40,7 +40,10 @@ As a response you get an instance item id and available transtitions of item.
   }
 }
 ```
+
 What we get and see:
-1. An unique item id as **\$instance-id** for intereaction and queriying item. notice **$** started simple or complex all types.
-2. **\$process** object contains information about process, existing state and available transtions.
-3.  View names are required for requesting view definition metadata.
+1. An unique item id as **\$instance-id** for intereaction and queriying item. 
+2.  **$** started simple or complex all fields are system generated fields.
+3. **\$process** object contains information about process, existing state and available transtions.
+4.  **display-view** contains displaying data view for existing state.
+5.  **modify-view** contains filling form for submitting data.
