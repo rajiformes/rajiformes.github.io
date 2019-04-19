@@ -11,7 +11,7 @@ First of all we have tell to Raji that we want start to submit a absense form. L
 
 ### Request
 ```
-POST https://.../raji/data/absence-request/new
+POST https://<localhost>/raji/data/absence-request/new
 ```
 
 ### Response
